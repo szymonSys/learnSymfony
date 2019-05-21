@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    Test list
+{% endblock %}
+{% block body %}
+    <h1>Test list</h1>
+    {% if data is defined and data|length %}
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Tags</th>
+            <th scope="col">
+                Action
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in data %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.title }}</td>
+                <td>{{ item.tags|join(', ') }}</td>
+                <td>&nbsp;</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+        <p>
+            Empty list.
+        </p>
+    {% endif %}
+
+{% endblock %}
