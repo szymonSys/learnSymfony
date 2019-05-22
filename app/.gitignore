@@ -7,7 +7,6 @@
 /var/
 /vendor/
 /../.idea/
-composer.lock
 ###< symfony/framework-bundle ###
 
 ###> squizlabs/php_codesniffer ###

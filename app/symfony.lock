@@ -225,6 +225,9 @@
             "./bin/console"
         ]
     },
+    "symfony/contracts": {
+        "version": "v1.1.0"
+    },
     "symfony/debug": {
         "version": "v3.4.27"
     },
@@ -381,6 +384,9 @@
     },
     "symfony/var-dumper": {
         "version": "v3.4.27"
+    },
+    "symfony/var-exporter": {
+        "version": "v4.2.8"
     },
     "symfony/web-profiler-bundle": {
         "version": "3.3",
